@@ -1,5 +1,6 @@
 package com.rocketseat.nlw.nearby.ui.component.market_details
 
+import androidx.annotation.DrawableRes
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -30,21 +31,21 @@ fun NearbyMarketDetailsInfos(modifier: Modifier = Modifier, market: Market) {
         Column(
             verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
-            InfoItem(icon = R.drawable.ic_ticket, text = "${market.coupons} cupons disponíveis")
-            InfoItem(icon = R.drawable.ic_map_pin, text = market.address)
-            InfoItem(icon = R.drawable.ic_phone, text = market.phone)
+            InfoItem(iconRes = R.drawable.ic_ticket, text = "${market.coupons} cupons disponíveis")
+            InfoItem(iconRes = R.drawable.ic_map_pin, text = market.address)
+            InfoItem(iconRes = R.drawable.ic_phone, text = market.phone)
         }
     }
 }
 
 @Composable
-fun InfoItem(modifier: Modifier = Modifier, icon: Int, text: String) {
+fun InfoItem(modifier: Modifier = Modifier, @DrawableRes iconRes: Int, text: String) {
     Row(
         horizontalArrangement = Arrangement.spacedBy(8.dp)
     ) {
         Icon(
             modifier = Modifier.size(16.dp),
-            painter = painterResource(id = icon),
+            painter = painterResource(id = iconRes),
             tint = Gray500,
             contentDescription = "Ícone Cupons"
         )
