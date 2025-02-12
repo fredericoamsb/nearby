@@ -10,5 +10,7 @@ Next Level Week Pocket: Mobile by Rocketseat
 <img width="200" alt="mobile-detail" src="https://github.com/fredericoamsb/nearby/blob/main/screenshots/welcome.png?raw=true"> <img width="200" alt="mobile-detail" src="https://github.com/fredericoamsb/nearby/blob/main/screenshots/home.png?raw=true"> <img width="200" alt="mobile-detail" src="https://github.com/fredericoamsb/nearby/blob/main/screenshots/market_details.png?raw=true">
 
 ### :hammer: How to test
-- Open the project on Android Studio and just run on a emulator;
-- To run on physical device: change the line 17 on file NearbyRemoteDataSource.kt from LOCAL_HOST_EMULATOR_BASE_URL to LOCAL_HOST_PHYSICAL_BASE_URL
+- Open the project in Android Studio and run it on an emulator;
+- To run on physical device:
+  - In the NearbyRemoteDataSource.kt file, change from LOCAL_HOST_EMULATOR_BASE_URL to LOCAL_HOST_PHYSICAL_BASE_URL;
+  - Change the IP address in the network_security_config.xml file and in the NearbyRemoteDataSource.kt file to your current IP address.
