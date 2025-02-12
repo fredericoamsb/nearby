@@ -12,5 +12,6 @@ Next Level Week Pocket: Mobile by Rocketseat
 ### :hammer: How to test
 - Open the project in Android Studio and run it on an emulator;
 - To run on physical device:
-  - In the NearbyRemoteDataSource.kt file, change from LOCAL_HOST_EMULATOR_BASE_URL to LOCAL_HOST_PHYSICAL_BASE_URL;
+  - Open the terminal in the backend directory and run the command ```npm start```;
+  - In the NearbyRemoteDataSource.kt file, change from ```LOCAL_HOST_EMULATOR_BASE_URL``` to ```LOCAL_HOST_PHYSICAL_BASE_URL```;
   - Change the IP address in the network_security_config.xml file and in the NearbyRemoteDataSource.kt file to your current IP address.
